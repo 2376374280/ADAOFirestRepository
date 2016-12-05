@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="inputTextField" destination="Uf8-PS-fXi" id="zo5-H2-Ujl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uf8-PS-fXi">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Jpc-b8-WnL"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="CAe-rs-eH4"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pd-6V-OmY">
+                    <color key="backgroundColor" red="1" green="0.6701118916530926" blue="0.66462604400258751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gzk-SZ-pqE"/>
+                    </constraints>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="sureAction:" destination="-1" eventType="touchUpInside" id="qTv-KY-qgv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvW-K4-HYa">
+                    <color key="backgroundColor" red="1" green="0.74863836669999995" blue="0.4388886441" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="CaR-5D-wlz"/>
+                    </constraints>
+                    <state key="normal" title="下一页"/>
+                    <connections>
+                        <action selector="goNextVcAction:" destination="-1" eventType="touchUpInside" id="jAK-u7-XYl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6pd-6V-OmY" firstAttribute="top" secondItem="Uf8-PS-fXi" secondAttribute="bottom" constant="30" id="02h-jx-lq2"/>
+                <constraint firstItem="6pd-6V-OmY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="9O5-IB-rvg"/>
+                <constraint firstItem="Uf8-PS-fXi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="HZQ-Lk-ewy"/>
+                <constraint firstItem="UvW-K4-HYa" firstAttribute="top" secondItem="6pd-6V-OmY" secondAttribute="bottom" constant="30" id="Uo3-vS-bnw"/>
+                <constraint firstItem="UvW-K4-HYa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="Z3L-tM-m1C"/>
+                <constraint firstAttribute="trailing" secondItem="UvW-K4-HYa" secondAttribute="trailing" constant="80" id="fPE-hZ-Mih"/>
+                <constraint firstAttribute="trailing" secondItem="6pd-6V-OmY" secondAttribute="trailing" constant="80" id="gyv-x9-5tR"/>
+                <constraint firstItem="Uf8-PS-fXi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="ocF-FN-eIB"/>
+                <constraint firstAttribute="trailing" secondItem="Uf8-PS-fXi" secondAttribute="trailing" constant="30" id="vwG-9S-DNL"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
